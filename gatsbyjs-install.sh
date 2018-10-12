@@ -22,12 +22,12 @@ sudo mkdir /etc/nginx/ssl
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.key -out /etc/nginx/ssl/nginx.crt
 sudo openssl dhparam -out /etc/nginx/ssl/dhparam.pem 2048
 sudo mkdir "$FOLDER"
-sudo cd "$FOLDER"
-sudo apt-get install nodejs
-sudo apt-get install npm
+cd "$FOLDER"
+sudo apt-get install nodejs -y
+sudo apt-get install npm -y
 sudo npm install --global gatsby-cli
 sudo npm i v -compile-cache
-sudo gatsby new "$DOMAIN" https://github.com/gatsbyjs/gatsby-starter-default
+gatsby new "$DOMAIN" https://github.com/gatsbyjs/gatsby-starter-default
 sudo systemctl restart nginx.service
 echo "GatsbyJS Installation & configuration succesfully finished.
 Twitter: @TeamKloudboy
