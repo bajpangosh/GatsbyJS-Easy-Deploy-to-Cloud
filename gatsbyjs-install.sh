@@ -28,6 +28,7 @@ sudo apt-get install npm -y
 sudo npm install --global gatsby-cli
 sudo npm i v -compile-cache
 gatsby new "$DOMAIN" https://github.com/gatsbyjs/gatsby-starter-default
+cd "$DOMAIN"
 sudo systemctl restart nginx.service
 echo "GatsbyJS Installation & configuration succesfully finished.
 Twitter: @TeamKloudboy
