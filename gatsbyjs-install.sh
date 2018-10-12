@@ -7,7 +7,7 @@ read FOLDER
 echo "Updating OS................."
 sleep 2;
 sudo apt-get update
-sudo apt-get install build-essential
+sudo apt-get install build-essential -y
 sudo apt-get install nginx -y
 echo "Sit back and relax :) ......"
 sleep 2;
